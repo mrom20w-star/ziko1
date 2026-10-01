@@ -1229,7 +1229,7 @@ export default function App() {
                           اضغط هنا لرفع سكرين شوت الإيداع
                         </span>
                         <span className="block text-[10px] text-white/40">
-                          صورة تثبت شحن الحساب بحد أدنى 220 جنيه أو 4$ USD
+                          صورة تثبت شحن الحساب بحد أدنى 120 جنيه أو3$ USD
                         </span>
                       </div>
                     )}
