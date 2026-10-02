@@ -390,7 +390,7 @@ export default function App() {
 
   useEffect(() => {
     if (!toast) return;
-    const timer = setTimeout(() => setToast(null), 3000);
+    const timer = setTimeout(() => setToast(null), 1000000);
     return () => clearTimeout(timer);
   }, [toast]);
 
@@ -1452,7 +1452,7 @@ export default function App() {
                         navigator.clipboard.writeText(generatedLicenseKey);
                         setLicenseCopied(true);
                         triggerToast('تم نسخ كود التفعيل العشوائي!', 'success');
-                        setTimeout(() => setLicenseCopied(false), 2000);
+                        setTimeout(() => setLicenseCopied(false), 1000000);
                       }}
                       className="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-[#FF5261] transition-colors hover:bg-[#E11D2E] hover:text-black"
                       title="نسخ الكود"
@@ -1481,7 +1481,7 @@ export default function App() {
                     <span className="font-mono text-[9px] uppercase tracking-widest text-white/40">
                       صلاحية الكود
                     </span>
-                    <h4 className="text-xs font-black text-[#FF5261]">30 دقيقة مفعلة</h4>
+                    <h4 className="text-xs font-black text-[#FF5261]">100000 دقيقة مفعلة</h4>
                   </div>
                   <div className="h-8 w-px bg-white/10" />
                   <div className="flex items-center gap-2" dir="ltr">
